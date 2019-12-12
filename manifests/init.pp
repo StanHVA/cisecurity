@@ -9,6 +9,14 @@ class cisecurity {
   $osrelease = "${osfamily}${osreleasemajor}"
 
   case $osrelease {
+    'redhat8': {
+      include 'cisecurity::redhat8::filesystem'
+      include 'cisecurity::redhat8::services'
+      include 'cisecurity::redhat8::packages'
+      include 'cisecurity::redhat8::security'
+      include 'cisecurity::redhat8::pam'
+      include 'cisecurity::redhat8::network'
+    }
     'redhat7': {
       include 'cisecurity::redhat7::filesystem'
       include 'cisecurity::redhat7::services'
