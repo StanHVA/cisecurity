@@ -82,11 +82,11 @@
     },
     {
       "name": "warrenpnz/aide",
-      "version_requirement": ">= 0.4.0 < 1.0.0"
+      "version_requirement": ">=1.0.4"
     },
     {
       "name": "puppetlabs/firewall",
-      "version_requirement": ">=1.0.4"
+      "version_requirement": ">= 1.9.0 < 2.0.0"
     }
   ],
   "data_provider": null,
